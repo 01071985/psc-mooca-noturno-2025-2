@@ -4,12 +4,9 @@ package com.example;
 public class Jogo {
 
     public static void main(String[] args) {
-        Personagem cacador = new Personagem(1, 1, 1);
-        //Personagem soneca = new Personagem();
-        cacador.nome = "João";
-    //soneca.nome = "Danilo";
-
-
+        Personagem cacador = new Personagem("João",10, 10, 5);
+        Personagem soneca = new Personagem("Danilo",4,3,5);
+        
         while(true){
         cacador.cacar();
         soneca.dormir();
