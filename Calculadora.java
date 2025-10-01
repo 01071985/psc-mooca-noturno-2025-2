@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class Calculadora {
 
             //public int soma(int a, int b){
@@ -5,12 +7,26 @@ public class Calculadora {
                 //resultado = a + b;
                 //return resultado;
     //}
-    
+    String modelo;
+
+    //Construtor
+    public Calculadora(){
+        modelo = "123";
+    JOptionPane.showMessageDialog(null,"Calculadora Simples" + modelo);
+    }
+    public CalculadoraCientifica(){
+        modelo = "456";
+    JOptionPane.showMessageDialog(null,"Calculadora Cientifica" + modelo);
+    }
 
     public double soma(double a, double b){
         double resultado = a + b;
        return resultado;
-}
+    }
+        public double soma(double a, double b, double c){
+        double resultado = a + b + c;
+       return resultado;}
+
 
      //public int subtracao(int a, int b){
         //int resultado;
@@ -29,7 +45,7 @@ public class Calculadora {
         //return resultado;
         
     //}
-    public double multiplicao(double a, double b){
+    public double multiplicacao(double a, double b){
         double resultado = a * b;
        return resultado;
   }
